@@ -497,7 +497,7 @@ a { text-decoration: none; color: inherit; }
 }
 .cert-row:hover .cert-icon { opacity: 1; }
 
-/* صورة الشهادة - تظهر مباشرة أسفل telc Deutsch B2 */
+/* صورة الشهادة */
 .cert-with-image {
   background: var(--c-card);
   border-radius: 12px;
@@ -566,6 +566,45 @@ a { text-decoration: none; color: inherit; }
 .lang-note {
   font-size: .75rem; font-weight: 300;
   color: var(--c-muted);
+}
+
+/* BEWERBUNGSBRIEF */
+.bewerbung {
+  background: var(--c-surface);
+}
+.bewerbung-card {
+  background: var(--c-card);
+  border-radius: 20px;
+  padding: 48px;
+  border: 1px solid var(--c-border);
+}
+.bewerbung-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.bewerbung-header h3 {
+  font-family: var(--f-display);
+  font-size: 1.6rem;
+  color: var(--c-orange);
+  margin-bottom: 8px;
+}
+.bewerbung-header p {
+  color: var(--c-muted);
+  font-size: 0.85rem;
+}
+.bewerbung-text {
+  color: #ccc;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+.bewerbung-text p {
+  margin-bottom: 20px;
+}
+.bewerbung-gruss {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--c-border);
+  font-style: italic;
 }
 
 /* CONTACT */
@@ -682,6 +721,7 @@ a { text-decoration: none; color: inherit; }
   .cert-icon { display: none; }
   .nav-links, .nav-cta { display: none; }
   .nav-burger { display: flex; }
+  .bewerbung-card { padding: 28px; }
 }
 @media (max-width: 520px) {
   .hero-right { height: 80vw; }
@@ -698,6 +738,7 @@ a { text-decoration: none; color: inherit; }
   .about-facts { grid-template-columns: 1fr; }
   .hero-badge { bottom: 16px; left: 16px; }
   .footer { flex-direction: column; text-align: center; }
+  .bewerbung-card { padding: 20px; }
 }
 </style>
 </head>
@@ -710,6 +751,7 @@ a { text-decoration: none; color: inherit; }
     <li><a href="#erfahrung">Erfahrung</a></li>
     <li><a href="#skills">Kompetenzen</a></li>
     <li><a href="#certs">Zertifikate</a></li>
+    <li><a href="#bewerbung">Bewerbung</a></li>
     <li><a href="#contact">Kontakt</a></li>
   </ul>
   <a href="mailto:salmaechchamrahy@gmail.com" class="nav-cta">Kontakt</a>
@@ -723,6 +765,7 @@ a { text-decoration: none; color: inherit; }
   <a href="#erfahrung" onclick="closeNav()">Erfahrung</a>
   <a href="#skills" onclick="closeNav()">Kompetenzen</a>
   <a href="#certs" onclick="closeNav()">Zertifikate</a>
+  <a href="#bewerbung" onclick="closeNav()">Bewerbung</a>
   <a href="#contact" onclick="closeNav()">Kontakt</a>
 </div>
 
@@ -736,19 +779,18 @@ a { text-decoration: none; color: inherit; }
     </h1>
     <p class="hero-role">Pflegeassistentin · Agadir, Marokko</p>
     <p class="hero-bio">
-      Engagierte Pflegeassistentin mit fundierter Ausbildung und echter Praxiserfahrung.<br>
-      <strong>telc B2-zertifiziert</strong> (Februar 2026) und bereit, in einem deutschen Pflegeteam 
-      jeden Tag etwas zu bewirken.
+      Engagierte Pflegeassistentin mit abgeschlossener Ausbildung und praktischer Erfahrung in der Grundpflege sowie in der Betreuung älterer Menschen.<br>
+      <strong>telc B2-zertifiziert</strong> (März 2026) und bereit, in einem deutschen Pflegeteam jeden Tag etwas zu bewirken.
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-fill">Kontakt aufnehmen</a>
       <a href="#erfahrung" class="btn btn-ghost">Werdegang ansehen</a>
     </div>
     <div class="hero-stats">
-      <div><div class="stat-val">2+</div><div class="stat-lbl">Praktika</div></div>
+      <div><div class="stat-val">2</div><div class="stat-lbl">Praktika</div></div>
       <div><div class="stat-val">B2</div><div class="stat-lbl">Deutsch</div></div>
-      <div><div class="stat-val">5</div><div class="stat-lbl">Zertifikate</div></div>
-      <div><div class="stat-val">3</div><div class="stat-lbl">Sprachen</div></div>
+      <div><div class="stat-val">4</div><div class="stat-lbl">Zertifikate</div></div>
+      <div><div class="stat-val">4</div><div class="stat-lbl">Sprachen</div></div>
     </div>
   </div>
   <div class="hero-right">
@@ -778,13 +820,13 @@ a { text-decoration: none; color: inherit; }
       <h2 class="sec-title">Engagement & <em>Empathie</em></h2>
       <div class="about-lead">„Für mich bedeutet Pflege, Menschen in verletzlichen Momenten zu begleiten – mit Respekt, Fachwissen und Herz.“</div>
       <div class="about-body">
-        <p>Mein Name ist <strong>Salma Ech-Chamrahy</strong>, geboren am 01.12.2004 in Marokko. Schon früh war mir klar, dass meine Berufung im sozialen Bereich liegt. Nach meiner Schulausbildung absolvierte ich eine fundierte Pflegeassistenz-Ausbildung am Institut MEDHIP und sammelte wertvolle Erfahrungen in verschiedenen Einrichtungen – von der Grundpflege bis zur geriatrischen Betreuung.</p>
-        <p>Mit meinem <strong>telc B2-Zertifikat</strong> (Februar 2026) und meiner hohen Lernbereitschaft möchte ich mich in einem deutschen Pflegeteam einbringen, um Menschen mit Empathie und Professionalität zu unterstützen.</p>
+        <p>Mein Name ist <strong>Salma Ech-Chamrahy</strong>, geboren am 01.12.2004 in Marokko. Schon früh war mir klar, dass meine Berufung im sozialen Bereich liegt. Nach meiner Schulausbildung absolvierte ich eine fundierte Pflegeassistenz-Ausbildung am Institut MEDHIP für paramedizinische Fachrichtungen (I.M.S.P.) und sammelte wertvolle Erfahrungen in verschiedenen Einrichtungen – von der Grundpflege bis zur geriatrischen Betreuung.</p>
+        <p>Mit meinem <strong>telc B2-Zertifikat</strong> (März 2026) und meiner hohen Lernbereitschaft möchte ich mich in einem deutschen Pflegeteam einbringen, um Menschen mit Empathie und Professionalität zu unterstützen.</p>
       </div>
       <div class="about-facts">
-        <div class="fact"><div class="fact-k">Ausbildung</div><div class="fact-v">Diplom - Pflege älterer Menschen</div></div>
-        <div class="fact"><div class="fact-k">telc Deutsch</div><div class="fact-v accent">B2 – zertifiziert (2026)</div></div>
-        <div class="fact"><div class="fact-k">Praxiserfahrung</div><div class="fact-v">A.M.A.S. & O.M.S.A</div></div>
+        <div class="fact"><div class="fact-k">Ausbildung</div><div class="fact-v">Diplom - Pflege älterer Menschen (2024-2025)</div></div>
+        <div class="fact"><div class="fact-k">telc Deutsch</div><div class="fact-v accent">B2 – zertifiziert (März 2026)</div></div>
+        <div class="fact"><div class="fact-k">Praxiserfahrung</div><div class="fact-v">A.M.A.S. & O.M.S.A (2025)</div></div>
         <div class="fact"><div class="fact-k">Ziel</div><div class="fact-v">Fachkraft mit Anerkennung</div></div>
       </div>
     </div>
@@ -797,9 +839,9 @@ a { text-decoration: none; color: inherit; }
   <h2 class="sec-title reveal"><em>Berufliche</em> Stationen</h2>
   <div class="timeline reveal">
     <div class="tl-item">
-      <div class="tl-head"><span class="tl-date">2024 – 2025</span></div>
+      <div class="tl-head"><span class="tl-date">09/2025 – 12/2025</span></div>
       <div class="tl-title">Pflegepraktikum - Grundpflege & Patientenbetreuung</div>
-      <div class="tl-org">Marokkanischer Verein für Soziales Handeln (A.M.A.S.)</div>
+      <div class="tl-org">Marokkanischer Verein für Soziales Handeln (A.M.A.S.) – Agadir</div>
       <ul class="tl-list">
         <li>Durchführung der Grundpflege und Unterstützung bei der Alltagsbewältigung</li>
         <li>Vitalparameter (RR, Puls, Temp., SpO₂) gemessen, überwacht und dokumentiert</li>
@@ -808,9 +850,9 @@ a { text-decoration: none; color: inherit; }
       </ul>
     </div>
     <div class="tl-item">
-      <div class="tl-head"><span class="tl-date">2023 – 2024</span></div>
+      <div class="tl-head"><span class="tl-date">04/2025 – 07/2025</span></div>
       <div class="tl-title">Praktikum - Soziale Betreuung & Pflege</div>
-      <div class="tl-org">Marokkanische Organisation für Rettung und Hilfe (O.M.S.A)</div>
+      <div class="tl-org">Marokkanische Organisation für Rettung und Hilfe (O.M.S.A) – Agadir</div>
       <ul class="tl-list">
         <li>Aktive Unterstützung bei der persönlichen Körperpflege, Mobilisation und Nahrungsaufnahme</li>
         <li>Psychosoziale Betreuung zur aktiven Entgegenwirkung von Einsamkeit</li>
@@ -818,14 +860,23 @@ a { text-decoration: none; color: inherit; }
       </ul>
     </div>
     <div class="tl-item">
-      <div class="tl-head"><span class="tl-date">2021 – 2023</span></div>
+      <div class="tl-head"><span class="tl-date">09/2024 – 03/2025</span></div>
       <div class="tl-title">Diplom-Ausbildung - Pflege älterer Menschen</div>
-      <div class="tl-org">Institut MEDHIP für Paramedizinische Fachrichtungen (I.M.S.P)</div>
+      <div class="tl-org">Institut MEDHIP für Paramedizinische Fachrichtungen (I.M.S.P.) – Agadir</div>
       <ul class="tl-list">
         <li>Professioneller und empathischer Umgang mit älteren Menschen</li>
         <li>Grundkenntnisse in der Pflege und Gesundheitsüberwachung</li>
         <li>Verständnis für psychische Bedürfnisse und altersbedingte Veränderungen</li>
+        <li>Kenntnisse über häufige Erkrankungen im Alter</li>
         <li>Erste Hilfe und Notfallmanagement</li>
+      </ul>
+    </div>
+    <div class="tl-item">
+      <div class="tl-head"><span class="tl-date">09/2024</span></div>
+      <div class="tl-title">Abitur (Baccalauréat) - Naturwissenschaften SVT</div>
+      <div class="tl-org">Gymnasium El Maarif – Inezgane / Akademie Souss-Massa</div>
+      <ul class="tl-list">
+        <li>Schwerpunkte: Biologie, Chemie, Anatomie, wissenschaftliche Methodik</li>
       </ul>
     </div>
   </div>
@@ -837,45 +888,41 @@ a { text-decoration: none; color: inherit; }
   <h2 class="sec-title reveal">Was mich <em>auszeichnet</em></h2>
   <div class="skills-grid reveal">
     <div class="sk-card"><div class="sk-ico">🫂</div><div class="sk-name">Pflegefachlich</div><ul class="sk-items"><li>Grundpflege & Altenpflege</li><li>Vitalzeichenkontrolle (RR, Puls, Temp., SpO₂)</li><li>Erste Hilfe & Notfallmanagement</li><li>Hygiene & Infektionsprävention</li></ul></div>
-    <div class="sk-card"><div class="sk-ico">💻</div><div class="sk-name">Digital</div><ul class="sk-items"><li>Microsoft Office 365</li><li>Adobe Photoshop, Canva</li><li>Pflegedokumentation</li></ul></div>
+    <div class="sk-card"><div class="sk-ico">💻</div><div class="sk-name">Digital</div><ul class="sk-items"><li>Microsoft Office 365 (Word, Excel, Outlook, PowerPoint)</li><li>Adobe Photoshop, Canva</li><li>Grundlagen Pflegedokumentation</li></ul></div>
     <div class="sk-card"><div class="sk-ico">❤️</div><div class="sk-name">Sozial</div><ul class="sk-items"><li>Empathie & Teamfähigkeit</li><li>Belastbarkeit & Verantwortung</li><li>Schnelle Auffassungsgabe</li><li>Interkulturelle Sensibilität</li></ul></div>
   </div>
 </section>
 
-<!-- ZERTIFIKATE - مع صورة telc مباشرة أسفلها -->
+<!-- ZERTIFIKATE -->
 <section class="sec certs" id="certs">
   <div class="sec-label reveal"><span>Zertifikate</span></div>
   <h2 class="sec-title reveal">Meine <em>Qualifikationen</em></h2>
   <div class="certs-list reveal">
-    <!-- Microsoft Zertifikat -->
     <div class="cert-row">
       <div class="cert-year">2026</div>
       <div class="cert-info">
         <div class="cert-name">Microsoft 365 Fundamentals Specialization</div>
-        <div class="cert-by">Coursera / Microsoft – März 2026</div>
+        <div class="cert-by">Coursera / Microsoft – Februar 2026</div>
       </div>
       <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
     </div>
 
-    <!-- telc B2 Zertifikat مع الصورة مباشرة أسفلها -->
     <div class="cert-with-image">
       <div class="cert-image-row">
         <div class="cert-image-header">
           <div class="cert-year">2026</div>
           <div class="cert-info">
             <div class="cert-name">telc Deutsch B2</div>
-            <div class="cert-by">GoAcademy! Sprachschule Düsseldorf – Februar 2026</div>
+            <div class="cert-by">GoAcademy! Sprachschule Düsseldorf – März 2026</div>
           </div>
           <div class="cert-icon"><i class="fas fa-certificate"></i></div>
         </div>
-        <!-- الصورة تظهر مباشرة أسفل الشهادة -->
         <div class="cert-image-box">
           <img src="IMG-20260402-WA0005.jpg" alt="telc Deutsch B2 Zertifikat - Salma Ech-Chamrahy">
         </div>
       </div>
     </div>
 
-    <!-- باقي الشهادات -->
     <div class="cert-row">
       <div class="cert-year">2025</div>
       <div class="cert-info">
@@ -892,13 +939,30 @@ a { text-decoration: none; color: inherit; }
       </div>
       <div class="cert-icon"><i class="fas fa-heartbeat"></i></div>
     </div>
-    <div class="cert-row">
-      <div class="cert-year">2025</div>
-      <div class="cert-info">
-        <div class="cert-name">First Aid for Adults</div>
-        <div class="cert-by">IFRC Learning Platform (International) – Januar 2025</div>
-      </div>
-      <div class="cert-icon"><i class="fas fa-globe"></i></div>
+  </div>
+</section>
+
+<!-- BEWERBUNGSBRIEF (رسالة الدافع) -->
+<section class="sec bewerbung" id="bewerbung">
+  <div class="sec-label reveal"><span>Bewerbung</span></div>
+  <h2 class="sec-title reveal">Mein <em>Motivationsschreiben</em></h2>
+  <div class="bewerbung-card reveal">
+    <div class="bewerbung-header">
+      <h3>Bewerbung um einen Ausbildungsplatz als Pflegefachfrau</h3>
+      <p>Agadir, 01.04.2026</p>
+    </div>
+    <div class="bewerbung-text">
+      <p>Sehr geehrte Damen und Herren,</p>
+      <p>hiermit bewerbe ich mich um einen Ausbildungsplatz als Pflegefachfrau in Ihrem Haus. Ihr Haus steht für eine qualitativ hochwertige Patientenversorgung sowie eine strukturierte und praxisnahe Ausbildung. Diese Rahmenbedingungen entsprechen genau meinen beruflichen Zielen und stellen für mich eine ideale Grundlage für meine weitere Entwicklung dar.</p>
+      <p>Ich habe mich bewusst für den Pflegeberuf entschieden, da ich Menschen in unterschiedlichen Lebenssituationen professionell unterstützen möchte. Besonders wichtig sind mir dabei ein verantwortungsbewusstes Arbeiten, ein respektvoller Umgang mit Patienten sowie eine zuverlässige und teamorientierte Arbeitsweise.</p>
+      <p>Durch mein <strong>Diplom in der Altenpflege am Institut MEDHIP</strong> verfüge ich über fundierte theoretische und praktische Kenntnisse im Pflegebereich, die ich im Rahmen eines mehrmonatigen Praktikums bei der <strong>Marokkanischen Organisation für Rettung und Hilfe (O.M.S.A)</strong> sowie beim <strong>Marokkanischen Verein für Soziales Handeln (A.M.A.S.)</strong> weiter vertiefen konnte. Dabei habe ich praktische Erfahrung in der Patientenbegleitung zu medizinischen Terminen, Unterstützung bei der Nahrungsaufnahme sowie bei der Körperpflege gesammelt und gelernt, auch in stressigen Situationen strukturiert und ruhig zu arbeiten.</p>
+      <p>Zusätzlich habe ich einen <strong>Erste-Hilfe-Kurs beim Marokkanischen Roten Halbmond</strong> absolviert. Mein <strong>Abitur im Bereich der experimentellen Wissenschaften (SVT)</strong> bildet eine solide Grundlage für das Verständnis medizinischer und naturwissenschaftlicher Zusammenhänge. Darüber hinaus habe ich eine <strong>Zertifizierung von Coursera in Microsoft 365 Fundamentals</strong> erworben, wodurch ich meine Kenntnisse im Umgang mit digitalen Tools erweitere und die digitale Dokumentation im täglichen Pflegealltag bei Ihnen unterstützen kann.</p>
+      <p>Meine <strong>Deutschkenntnisse auf dem Niveau B2 (telc)</strong> ermöglichen mir eine klare und sichere Kommunikation im Arbeitsalltag mit Patienten, Angehörigen und im Team. Zu meinen Stärken zählen Lernbereitschaft, Teamfähigkeit und die Bereitschaft, Verantwortung zu übernehmen. Ich bin motiviert, meine Ausbildung in Deutschland erfolgreich zu absolvieren und mich sowohl fachlich als auch persönlich weiterzuentwickeln.</p>
+      <p>Gerne überzeuge ich Sie in einem persönlichen Gespräch von meiner Eignung.</p>
+    </div>
+    <div class="bewerbung-gruss">
+      <p>Mit freundlichen Grüßen</p>
+      <p><strong>Salma Ech-Chamrahy</strong></p>
     </div>
   </div>
 </section>
@@ -908,9 +972,10 @@ a { text-decoration: none; color: inherit; }
   <div class="sec-label reveal"><span>Sprachen</span></div>
   <h2 class="sec-title reveal">Meine <em>Sprachprofile</em></h2>
   <div class="langs-grid reveal">
-    <div class="lang-card"><div class="lang-level">B2</div><div class="lang-name">Deutsch</div><div class="lang-note">telc zertifiziert (2026)</div></div>
     <div class="lang-card"><div class="lang-level">C2</div><div class="lang-name">Arabisch</div><div class="lang-note">Muttersprache</div></div>
-    <div class="lang-card"><div class="lang-level">B2</div><div class="lang-name">Französisch</div><div class="lang-note">fließend</div></div>
+    <div class="lang-card"><div class="lang-level">B2</div><div class="lang-name">Deutsch</div><div class="lang-note">telc zertifiziert (März 2026)</div></div>
+    <div class="lang-card"><div class="lang-level">B2</div><div class="lang-name">Französisch</div><div class="lang-note">gute Kenntnisse</div></div>
+    <div class="lang-card"><div class="lang-level">B2</div><div class="lang-name">Englisch</div><div class="lang-note">gute Kenntnisse</div></div>
   </div>
 </section>
 
