@@ -518,6 +518,21 @@ a { text-decoration: none; color: inherit; }
   font-size: .78rem; font-weight: 300;
   color: var(--c-muted);
 }
+/* إضافة نمط لاسم الملف */
+.cert-filename {
+  font-size: 10px;
+  color: #888;
+  margin-top: 6px;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.cert-filename i {
+  font-size: 10px;
+  color: var(--c-orange);
+}
 .cert-icon {
   font-size: 1.4rem; opacity: .4;
   transition: opacity .3s;
@@ -789,7 +804,6 @@ a { text-decoration: none; color: inherit; }
   </div>
 
   <div class="hero-right">
-    <!-- Bild angepasst: Der Dateiname wurde gemäss Ihrer Vorgabe gesetzt -->
     <img class="hero-photo" src="Picsart_26-03-15_16-29-04-661(1)(1).jpg" alt="Salma Ech-Chamrahy">
     <div class="hero-photo-overlay"></div>
     <div class="hero-badge">
@@ -878,12 +892,25 @@ a { text-decoration: none; color: inherit; }
   </div>
 </section>
 
-<!-- ZERTIFIKATE -->
+<!-- ZERTIFIKATE - mit Hinweis auf den Dateinamen der telc-B2-Prüfungsurkunde -->
 <section class="sec certs" id="certs">
   <div class="sec-label reveal"><span>Zertifikate</span></div>
   <h2 class="sec-title reveal">Meine <em>Qualifikationen</em></h2>
   <div class="certs-list reveal">
-    <div class="cert-row"><div class="cert-year">2024</div><div class="cert-info"><div class="cert-name">telc Deutsch B2</div><div class="cert-by">telc GmbH</div></div><div class="cert-icon"><i class="fas fa-certificate"></i></div></div>
+    <div class="cert-row">
+      <div class="cert-year">2024</div>
+      <div class="cert-info">
+        <div class="cert-name">telc Deutsch B2</div>
+        <div class="cert-by">telc GmbH</div>
+        <!-- اسم الملف فقط (بدون صورة) -->
+        <div class="cert-filename">
+          <i class="fas fa-file-alt"></i>
+          <span>IMG-20260402-WA0005.jpg</span>
+          <span style="font-size: 8px; background: #2a2a2a; padding: 2px 6px; border-radius: 10px;">Prüfungsurkunde</span>
+        </div>
+      </div>
+      <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+    </div>
     <div class="cert-row"><div class="cert-year">2023</div><div class="cert-info"><div class="cert-name">Basisschulung Demenz</div><div class="cert-by">Deutsche Alzheimer Gesellschaft</div></div><div class="cert-icon"><i class="fas fa-brain"></i></div></div>
     <div class="cert-row"><div class="cert-year">2023</div><div class="cert-info"><div class="cert-name">Erste Hilfe & Notfalltraining</div><div class="cert-by">Croissant-Rouge Maroc</div></div><div class="cert-icon"><i class="fas fa-heartbeat"></i></div></div>
     <div class="cert-row"><div class="cert-year">2022</div><div class="cert-info"><div class="cert-name">Pflegeassistentin (staatl.)</div><div class="cert-by">Ministère de la Santé</div></div><div class="cert-icon"><i class="fas fa-user-md"></i></div></div>
@@ -903,26 +930,23 @@ a { text-decoration: none; color: inherit; }
   </div>
 </section>
 
-<!-- KONTAKT (moderne Icons & helle, harmonische Farben) -->
+<!-- KONTAKT -->
 <section class="sec contact" id="contact">
   <div class="contact-inner reveal">
     <div class="sec-label"><span>Kontakt</span></div>
     <h2 class="sec-title">Lassen Sie uns <em>verbinden</em></h2>
     <p class="sec-sub">Ich freue mich über Ihre Nachricht – ob Stellenangebot, Rückfragen oder Austausch.</p>
     <div class="contact-cards">
-      <!-- Telefon: elegantes, helles Icon -->
       <div class="contact-card">
         <div class="cc-ico"><i class="fas fa-phone-alt"></i></div>
         <div class="cc-lbl">Telefon</div>
         <div class="cc-val">+212 6 12 34 56 78</div>
       </div>
-      <!-- Email: neues, modernes und helles Icon (envelope mit Kreis) -->
       <div class="contact-card">
         <div class="cc-ico"><i class="fas fa-envelope-open-text"></i></div>
         <div class="cc-lbl">E-Mail</div>
         <div class="cc-val">salmaechchamrahy@gmail.com</div>
       </div>
-      <!-- Adresse -->
       <div class="contact-card">
         <div class="cc-ico"><i class="fas fa-map-marker-alt"></i></div>
         <div class="cc-lbl">Standort</div>
@@ -937,7 +961,6 @@ a { text-decoration: none; color: inherit; }
   <div class="footer-copy">© 2025 – Pflege mit Herz und Verstand</div>
 </footer>
 
-<!-- Einfaches JS für Burger-Menü + Reveal -->
 <script>
   (function(){
     const burger = document.getElementById('burger');
@@ -966,4 +989,4 @@ a { text-decoration: none; color: inherit; }
   })();
 </script>
 </body>
-  </html>
+</html>
